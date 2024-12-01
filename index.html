@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Andrés</title>
+</head>
+<body>
+    <!-- HOME -->
+    <section id="home" class="home">
+        <header>
+            <a href="#" class="logo">
+                <span class="barra-logo">/</span>
+                <span class="texto">Andrés</span>
+            </a>
+            <div class="menu" onclick="verMenu()">
+                <span>MENU</span>
+                <div class="barras">
+                    <div class="linea efecto"></div>
+                    <div class="linea"></div>
+                    <div class="linea efecto"></div>
+                </div>
+            </div>
+            <!-- Menu desplegable -->
+            <nav id="nav" class="nav-menu">
+                    <a href="#home" onclick="cerrar()">Inicio</a>
+                    <a href="#portfolio" onclick="cerrar()" >Portfolio</a>
+                    <a href="#sobremi" onclick="cerrar()">Sobre Mí</a>
+                    <a href="#habilidades" onclick="cerrar()">Habilidades</a>
+                    <a href="#testimonios" onclick="cerrar()">Testimonios</a>
+                   <button onclick="cerrar()"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+        </header>
+        <div class="contenido">
+            <h1>Andrés <br>Hernández</h1>
+            <p class="descripcion">DISEÑO WEB <span class="color">/</span>DESAROLLO DE SOFTWARE <span class="color">/</span> CIBERSEGURIDAD</p>
+
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>    
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="titulo-seccion headline load-hidden">Portfolio</h2>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Reservas de Hotel</h3>
+                    <p class="descripcion-proyecto">Sistema Reservas de hotel</p>
+                </div>
+                <img src="img/proyecto1.jpg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Stock Control</h3>
+                    <p class="descripcion-proyecto">Sistema de Inventarios</p>
+                </div>
+                <img src="img/proyecto2.jpg" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">Blog del Cafe</h3>
+                    <p class="descripcion-proyecto">Página web de Recetas, Cursos y Talleres</p>
+                </div>
+                <img src="img/proyecto3.jpg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">StarGus</h3>
+                    <p class="descripcion-proyecto">Página web de Comida Rapida con Reservas y Pedisos en linea</p>
+                </div>
+                <img src="img/proyecto6.jpeg" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">SysAdminMexico</h3>
+                    <p class="descripcion-proyecto">Página de Capacitación, Administración de Sistemas y Ciberseguridad</p>
+                </div>
+                <img src="img/proyecto5.jpg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">BlackParadox</h3>
+                    <p class="descripcion-proyecto">Página web de Eventos, Bodas, Congresos, etc.</p>
+                </div>
+                <img src="img/proyecto4.jpg" alt="" class="img-proyecto">
+            </div>
+        </div>
+    </section>
+    
+    <!--  SOBRE MI -->
+    <section class="sobre-mi" id="sobremi">
+        <h2 class="titulo-seccion negro">Sobre Mí</h2>
+        <h3>Andrés <span class="linea"></span></h3>
+        <h4 class="descripcion">
+            Soy Andrés, un <a href="#"><span class="efecto"> </span>desarrollador de Software</a> Con experiencia en <a href="#"><span class="efecto"> </span>diseño web creativo,</a> desarrollo de software empresarial personalizado y prácticas de <a href="#"><span class="efecto"> </span>Ciberseguridad</a> enfocadas en proteger la información crítica. Mi enfoque combina funcionalidad, estética y seguridad para ofrecer<a href="#"><span class="efecto"> </span> soluciones tecnológicas completas.</a>.
+        </h4>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="titulo-seccion">Habilidades</h2>
+        <div class="fila">
+            <div class="menu">
+                <ul>
+                    <li id = "1" class="selected" onclick="mostrar(this)">Desarrollo de Software</li>
+                    <li id = "2" onclick="mostrar(this)" class="">Diseño Web</li>
+                    <li id = "3" onclick="mostrar(this)">Ciberseguridad</li>
+                    <li id = "4" onclick="mostrar(this)">Administración de Sistemas</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="detalle" id="info1">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h4>Sistemas Integrales Empresariales</h4>
+                            <p>Desarrollo sistemas integrales empresariales que optimizan procesos, integran tecnologías y potencian la eficiencia organizacional.</p>
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>Software a Medida</h4>
+                            <p>Desarrollo software a la medida, adaptado a las necesidades específicas de cada cliente para garantizar soluciones eficientes y personalizadas.</p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>Desarrollo Mobil</h4>
+                            <p>Desarrollo aplicaciones móviles intuitivas y funcionales, diseñadas para satisfacer necesidades específicas y mejorar la experiencia del usuario.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info2">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-thin fa-globe"></i>
+                            <h4>Diseño de Paginas Web</h4>
+                            <p>Diseño páginas web modernas, funcionales y adaptadas a las necesidades del cliente, priorizando la experiencia del usuario y la optimización para dispositivos móviles.</p>
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h4>Diseño de Tiendas en Linea</h4>
+                            <p>Diseño de tiendas en línea personalizadas, enfocadas en mejorar la experiencia del cliente, optimizar procesos de compra y maximizar el potencial de ventas.</p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-wrench"></i>
+                            <h4>Optimización y mantenimiento web</h4>
+                            <p>Brindo servicios de optimización y mantenimiento web, asegurando un rendimiento eficiente, actualizaciones constantes y la protección de los sitios frente a vulnerabilidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info3">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-user-secret"></i>
+                            <h4>Pentesting y hacking ético</h4>
+                            <p>Realizo pruebas de penetración (petesting) y hacking ético, identificando vulnerabilidades y evaluando la seguridad de sistemas, redes y aplicaciones, con el objetivo de fortalecer la infraestructura tecnológica y proteger contra amenazas cibernéticas.</p>
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-regular fa-folder-open"></i>
+                            <h4>Implementación de normas de seguridad</h4>
+                            <p>Implemento y gestión de normas de seguridad de la información, como ISO 27001, para establecer políticas, procesos y controles que protejan los activos digitales y garanticen el cumplimiento de los estándares internacionales en seguridad.</p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h4>Protección y prevención de robo de datos</h4>
+                            <p>Desarrollo e implemento estrategias de protección y prevención contra el robo de datos, utilizando tecnologías avanzadas para garantizar la seguridad, confidencialidad y disponibilidad de la información.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info4">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-sitemap"></i>
+                            <h4>Automatización de procesos y administración de infraestructura.</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <h4>Gestión de servidores y redes</h4>
+                            <p>Administrador y configuro servidores y redes, asegurando su rendimiento, estabilidad y seguridad. Implemento soluciones para la gestión eficiente de tráfico de datos, optimizando la conectividad y protegiendo la infraestructura de TI contra amenazas externas.</p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-suitcase-medical"></i>
+                            <h4>Monitoreo, gestión de sistemas y soporte técnico</h4>
+                            <p>Realizo monitoreo continuo de sistemas y ofrezco soporte técnico para garantizar el funcionamiento óptimo de la infraestructura, resolviendo problemas de manera eficiente y proactiva.</p>
+                            <h4>24/7 Soprte a clientes</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios" id="testimonios">
+        <h2 class="titulo-seccion">Testimonios</h2>
+        <div class="division">
+            <div class="col col1">
+            </div>
+            <div class="col col2">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="titulo">
+               <h3>Mis <br> Clientes <span class="linea"></span></h3>
+            </div>
+            <div class="cliente">
+                <div class="contenedor-img">
+                    <img src="img/cliente1.png" alt="" id="imgCliente">
+                </div>
+                <button class="siguiente" onclick="siguiente()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="opinion">
+                <h3 id="tituloCliente"> Un colaborador clave en soluciones de TI !!!</h3>
+                <p id="txtCliente">He tenido el placer de trabajar con Andrés Hernández en diversas implementaciones de sistemas a medida, servicios de ciberseguridad, pentesting y gestión de redes e infraestructura. Su enfoque profesional y profundo conocimiento técnico han sido fundamentales para garantizar la seguridad y el rendimiento de las soluciones. que hemos implementado. Andrés demuestra una gran capacidad para adaptarse a las necesidades de cada cliente, brindando soluciones eficientes y confiables que cumplen con los más altos estándares de calidad.</p>
+                <h4 id="nombreCliente">Omar L.</h4>
+                <p id="puestoCliente">CEO SysAdmin México</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
